@@ -33,13 +33,13 @@ function getData(category){
                 d.date = moment(d.date).format("MM-YY")
                 result = d.date
             break;
-            case 'courseID':
+            case 'course ID':
                 result = d.course_id
             break;
-            case 'studentID':
+            case 'student ID':
                 result = d.course_id
             break;
-            case 'schoolID':
+            case 'school ID':
                 result = d.course_id
             break;
         }
