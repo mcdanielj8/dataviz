@@ -52,12 +52,10 @@ function getData(category){
         }).toFixed(2);
       })
       .entries(data)
-      console.log(newData);
   update(newData, category);
 })}
 
 function update(newData, category){
-  console.log('update')
 
   x.domain(newData.map((d)=>{ return d.key; }));
   y.domain([0, d3.max(newData, function(d) { return d.value; })]);
