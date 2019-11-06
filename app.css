@@ -1,27 +1,31 @@
 text {
-    fill: white;
+    fill: black;
   }
+  
   rect {
     fill: rgb(37, 137, 161);
-    fill-opacity: 1;
   }
 
   rect:hover {
-    fill: rgb(20, 88, 128);
+    fill: rgb(219, 145, 60)
   }
   
-  .grid path {stroke-width: 0;}
+  .grid path {
+      stroke-width: 0;
+}
+
   .grid .tick {
     stroke: lightgrey;
     opacity: 0.7;
   }
+
   line {
     stroke-opacity: 0.2;
-    stroke: white;
+    stroke: #000;
   }
   
   svg {
-    background: #555555;
+    background: #ffffff;
   }
   
   button {
@@ -49,11 +53,10 @@ text {
 
   .flex {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
   }
 
   .disclaimer {
       text-align: center;
-
   }
   
