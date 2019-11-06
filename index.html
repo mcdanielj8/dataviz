@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="app.css">
-
-</link>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 <body onload="getData('category')">
 
@@ -13,11 +12,21 @@
 
   </div>
   <div class="button-group flex">
-      <button type="submit" onClick="getData('category')">Category</button>
-      <button type="submit" onClick="getData('month')">Month</button>
-      <button type="submit" onClick="getData('courseID')">Course ID*</button>
-      <button type="submit" onClick="getData('schoolID')">School ID*</button>
-      <button type="submit" onClick="getData('studentID')">Student ID*</button>    
+      <button type="submit" class="btn btn-secondary" onClick="getData('category')">
+        Category
+      </button>
+      <button type="submit" class="btn btn-secondary" onClick="getData('month')">
+        Month
+      </button>
+      <button type="submit" class="btn btn-secondary" onClick="getData('courseID')">
+        Course ID*
+      </button>
+      <button type="submit" class="btn btn-secondary" onClick="getData('schoolID')">
+        School ID*
+      </button>
+      <button type="submit" class="btn btn-secondary" onClick="getData('studentID')">
+        Student ID*
+      </button>    
   </div>
   <div class="disclaimer">
       *Not recommended: viewing data in this category/format is unweildy

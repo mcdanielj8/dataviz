@@ -65,12 +65,13 @@ function update(newData, category){
   svg.selectAll("text").remove()
   svg.selectAll("line").remove()
    //add horizontal bars
-   svg.append('g')
+  svg.append('g')
       .attr('class', 'grid')
       .call(d3.axisLeft()
           .scale(y)
           .tickSize(-width, 0, 0)
           .tickFormat(''))
+
   //put new info
   svg.selectAll()
     .data(newData)
@@ -80,8 +81,6 @@ function update(newData, category){
     .attr('y', (d) => y(d.value))
     .attr('height', (d) => height - y(d.value))
     .attr('width', x.bandwidth())
-
-
 
   // Add the X Axis
   svg.append("g")
