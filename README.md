@@ -1,5 +1,8 @@
 # Data Visualization Test
 
+# Live Demo
+https://mcdanielj8.github.io/dataviz/index.html
+
 ## Installation
 `git clone https://github.com/mcdanielj8/dataviz.git`
 `npm i`
