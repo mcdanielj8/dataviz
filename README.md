@@ -15,7 +15,7 @@ From the project root directory: `live-server`
 Due to time constraints, there are some improvements that could be made:
 
 ### Dashboard
-A bar chart was chosen for this visualization, but some of the categories (such as the IDs) would really benefit from being displayed in other formats - something that could be filtered, preferably. Turning this display into a dashboard with multiple visualization options would be my first improvement.
+A bar chart was chosen for this visualization, but some of the categories (such as the IDs) would really benefit from being displayed in other formats - something that could be filtered, preferably. A line graph may be preferable for the months category. Turning this display into a dashboard with multiple visualization options would be my first improvement.
 
 ### Code Refactoring
 Some of the JS code could be refactored, especially getting new data and formatting the dates. This would help with performance.
