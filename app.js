@@ -14,7 +14,7 @@ const y = d3.scaleLinear()
 let svg = d3.select("body").append("svg")
     .attr("width", width + margin + margin)
     .attr("height", height + margin + margin)
-  .append("g")
+    .append("g")
     .attr("transform",
           "translate(" + margin + "," + margin + ")");
 
@@ -64,7 +64,13 @@ function update(newData, category){
   svg.selectAll("rect").remove()
   svg.selectAll("text").remove()
   svg.selectAll("line").remove()
-
+   //add horizontal bars
+   svg.append('g')
+      .attr('class', 'grid')
+      .call(d3.axisLeft()
+          .scale(y)
+          .tickSize(-width, 0, 0)
+          .tickFormat(''))
   //put new info
   svg.selectAll()
     .data(newData)
@@ -75,13 +81,7 @@ function update(newData, category){
     .attr('height', (d) => height - y(d.value))
     .attr('width', x.bandwidth())
 
-      //add horizontal bars
-      svg.append('g')
-      .attr('class', 'grid')
-      .call(d3.axisLeft()
-          .scale(y)
-          .tickSize(-width, 0, 0)
-          .tickFormat(''))
+
 
   // Add the X Axis
   svg.append("g")
@@ -90,8 +90,7 @@ function update(newData, category){
 
   svg.append("text")             
       .attr("transform",
-            "translate(" + (width/2) + " ," + 
-                           (height + 40) + ")")
+            "translate(" + (width/2) + " ," + (height + 40) + ")")
       .style("text-anchor", "middle")
       .text(category.toUpperCase());
 
