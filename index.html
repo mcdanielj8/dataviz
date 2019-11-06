@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="app.css">
+
+</link>
+
+<body onload="getData('category')">
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="app.js"></script>
+  <div id="container" class="flex">
+
+  </div>
+  <div class="button-group flex">
+      <button type="submit" onClick="getData('category')">Category</button>
+      <button type="submit" onClick="getData('month')">Month</button>
+      <button type="submit" onClick="getData('courseID')">Course ID*</button>
+      <button type="submit" onClick="getData('schoolID')">School ID*</button>
+      <button type="submit" onClick="getData('studentID')">Student ID*</button>    
+  </div>
+  *Not recommended: viewing data in this category/format is unweildy
+
+</body>
